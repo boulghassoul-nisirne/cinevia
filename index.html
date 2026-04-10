@@ -1,90 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>cinevia</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Films App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="navbar">
-    <div class="container nav-content">
-      <h1 class="logo">cinevia</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#films">Films</a></li>
-          <li><a href="#favoris">Favoris</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+   <header class="header">
+    <div class="container nav">
+      <h1 class="logo">Cinevia</h1>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#films">Films</a></li>
+        <li><a href="#favourite">Favoris</a></li>
+      </ul>
+        <input type="text" placeholder="Rechercher..." class="search">
+   
   </header>
 
   
   <section class="hero">
-    <div class="hero-content">
-      <h2>Bienvenue sur Nexto Movies</h2>
-      <p>Découvrez les meilleurs films du moment</p>
-      <a href="#films" class="btn">Voir les films</a>
-    </div>
-  </section>
-
-  
-  <section id="films" class="section">
     <div class="container">
-      <h2>Films</h2>
-
-      <div class="grid">
-
-        <div class="card">
-          <img src="https://via.placeholder.com/300x400" alt="film">
-          <h3>Film 1</h3>
-          <a href="#modal1" class="btn">Voir détails</a>
-        </div>
-
-       
-        <div class="card">
-          <img src="https://via.placeholder.com/300x400" alt="film">
-          <h3>Film 2</h3>
-          <a href="#modal1" class="btn">Voir détails</a>
-        </div>
-
-        
-        <div class="card">
-          <img src="https://via.placeholder.com/300x400" alt="film">
-          <h3>Film 3</h3>
-          <a href="#modal1" class="btn">Voir détails</a>
-        </div>
-
-      </div>
+      <h2>Découvrez les meilleurs films</h2>
+      <p>Explorez une sélection de films</p>
+      <button class="btn">Voir les films</button>
     </div>
   </section>
 
+  <section class="films-container" id="films">
+    <h2>Films</h2>
+    <div class="grid" id="films-container"></div>
+  </section>
   
-  <section id="favoris" class="section">
-    <div class="container">
-      <h2>Favoris</h2>
-      <p>Aucun film ajouté pour le moment.</p>
-    </div>
+
+  <section class="films-container" id="favourite">
+   <h2>Favourite</h2>
   </section>
 
- 
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Nexto</p>
-    </div>
+    <p>© 2026 Cinevia</p>
   </footer>
 
-  
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <a href="#" class="close">&times;</a>
-      <h2>Détails du film</h2>
-      <p>Description du film ici...</p>
-    </div>
-  </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
